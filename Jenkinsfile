@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                go env -w GO111MODULE=auto
+                sh 'go env -w GO111MODULE=auto'
                 sh 'go build'
             }
         }
