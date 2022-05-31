@@ -3,8 +3,8 @@ pipeline {
     tools {
         go 'go-1.18'
     }
-    environment {
-        GO111MODULES = 'on'
+    environment {        
+        GO111MODULE = 'auto'
     }    
     stages {
         stage('Build') {
